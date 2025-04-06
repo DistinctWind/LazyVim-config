@@ -1,5 +1,6 @@
 return {
   "keaising/im-select.nvim",
+  vscode = true,
   opts = {
     -- IM will be set to `default_im_select` in `normal` mode
     -- For Windows/WSL, default: "1033", aka: English US Keyboard
