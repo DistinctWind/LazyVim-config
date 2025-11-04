@@ -8,3 +8,9 @@ if vim.g.vscode then
     vscode.action("workbench.files.action.focusFilesExplorer")
   end)
 end
+
+local is_mac = vim.fn.has("macunix") == 1
+
+if is_mac then
+  vim.notify("hello from mac")
+end
