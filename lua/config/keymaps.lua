@@ -12,5 +12,15 @@ end
 local is_mac = vim.fn.has("macunix") == 1
 
 if is_mac then
-  vim.notify("hello from mac")
+  -- 普通模式映射
+  vim.keymap.set("n", "<D-d>", "<C-d>")
+  vim.keymap.set("n", "<D-u>", "<C-u>")
+  vim.keymap.set("n", "<D-f>", "<C-f>")
+  vim.keymap.set("n", "<D-b>", "<C-b>")
+
+  -- 可视模式映射（可选）
+  vim.keymap.set("v", "<D-d>", "<C-d>")
+  vim.keymap.set("v", "<D-u>", "<C-u>")
+  vim.keymap.set("v", "<D-f>", "<C-f>")
+  vim.keymap.set("v", "<D-b>", "<C-b>")
 end
